@@ -1,0 +1,41 @@
+@import "./../../../node_modules/vazirmatn/Vazirmatn-font-face.css";
+@import "mixed";
+//misc/Farsi-Digits
+body {
+  font-family: Vazirmatn, sans-serif;
+  background: linear-gradient(180deg, #F5F3F4 0%, #DCE1ED 100%);
+  min-height: 100vh;
+  @include flex-center;
+  direction: rtl;
+  font-feature-settings: "ss01";
+
+  #root {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-fade {
+    .swiper-slide {
+      opacity: 0 !important;
+    }
+
+    .swiper-slide-active {
+      opacity: 1 !important;
+    }
+  }
+
+  .scroll-rtl {
+    > div {
+      > div {
+        margin-right: 0 !important;
+        margin-left: -17px !important;
+      }
+    }
+  }
+}
+
+:root {
+  --title: #080E13;
+  --description: #757575;
+}

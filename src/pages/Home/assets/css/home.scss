@@ -1,0 +1,14 @@
+.home-parent {
+  max-width: 90%;
+  margin: 0 auto;
+  height: calc(100vh - 107px);
+  border-radius: 25px;
+  background: linear-gradient(180deg, #F8FAFB 0%, #F5F7F9 100%);
+  box-shadow: 0 20px 60px 0 #C1C8DF;
+  display: flex;
+  overflow: hidden;
+
+  .main {
+    flex: 1;
+  }
+}
