@@ -11,6 +11,11 @@ export const Language = {
         totalParticipantNumber: "72",
         developersTitle: "برنامه نویسان این پروژه",
         status: 'وضعیت',
+        home: 'خانه',
+        home_tooltip: 'خانه',
+        list_test: 'لیست آزمون ها',
+        create_test: 'ایجاد آزمون',
+        list_users: 'لیست کاربران',
     },
     en: {}
 }
