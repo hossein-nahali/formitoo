@@ -16,6 +16,24 @@ export const Language = {
         list_test: 'لیست آزمون ها',
         create_test: 'ایجاد آزمون',
         list_users: 'لیست کاربران',
+        good_morning: 'صبح بخیر',
+        good_afternoon: 'عصر بخیر',
+        good_night: 'شب بخیر',
+        status_desc_title: {
+            today: 'امروز',
+            person: 'نفر',
+            in_test: 'در آزمون',
+            participated: 'شرکت کردند'
+        },
+        personality_test: 'آزمون تیپ شخصیتی',
+        participants: 'شرکت کنندگان',
+        person_27: '27 نفر',
+        tests: 'آزمون ها',
+        active_tests_30: '30 آزمون فعال',
+        free_host_space: 'فضای آزاد هاست',
+        mg_3000: '3000 مگابایت',
+        mg_500: '500 مگابایت',
+        used_host_space: 'فضای استفاده شده هاست',
     },
     en: {}
 }
