@@ -1,9 +1,8 @@
 import './assets/css/Menu.scss'
 import {ClipboardExport, ClipboardText, Home, TooltipArrow, UserSquare} from "../../assets/icons";
-import {NavLink} from "../NavLink/NavLink.jsx";
 import {useState} from "react";
 import {Language} from "../../config/Language.js";
-import {useLocation} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 
 export const Menu = () => {
     const location = useLocation()
