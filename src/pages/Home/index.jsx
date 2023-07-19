@@ -1,15 +1,1 @@
-import './assets/css/home.scss'
-import {Sidebar} from "../../GlobalComponents/Sidebar";
-import {Menu} from "../../GlobalComponents/menu";
-
-export const Home = () => {
-
-
-    return (
-        <div className={'home-parent'}>
-            <Menu/>
-            <div className={'main'}>home page</div>
-            <Sidebar/>
-        </div>
-    )
-}
+import './assets/css/home.scss'import {Sidebar} from "../../GlobalComponents/Sidebar";import {Menu} from "../../GlobalComponents/menu";import {GeneralStatus, Title} from "./Components";export const Home = () => {    return (        <div className={'home-parent'}>            <Menu/>            <div className={'main'}>                <Title/>                <GeneralStatus/>            </div>            <Sidebar/>        </div>    )}
