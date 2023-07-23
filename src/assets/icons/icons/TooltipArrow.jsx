@@ -1,9 +1,9 @@
-export const TooltipArrow = ({color}) => (
+export const TooltipArrow = (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
         <g filter="url(#filter0_b_224_1787)">
             <path
                 d="M7.25 14.5V11.2738C7.25 7.27419 10.0896 5.63085 13.5575 7.63669L16.3488 9.25585L19.14 10.875C22.6079 12.8809 22.6079 16.1554 19.14 18.1613L16.3488 19.7804L13.5575 21.3996C10.0896 23.3692 7.25 21.7379 7.25 17.7263V14.5Z"
-                fill="#1E2B3B" fillOpacity="0.99" stroke={color ? color : "#1E2B3B"} strokeOpacity="0.99"
+                fill="#1E2B3B" fillOpacity="0.99" stroke={props.color ? props.color : "#1E2B3B"} strokeOpacity="0.99"
                 strokeWidth="1.5"
                 strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
         </g>
