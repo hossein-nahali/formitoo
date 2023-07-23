@@ -1,14 +1,18 @@
-export const Box = ({children}) => {
+import {Link} from "react-router-dom";
+import './assets/css/Box.scss'
+
+export const Box = ({children, title, readMore, bg, className}, props) => {
     const style = {
-        borderRadius: 40,
-        background: '#FFF',
-        boxShadow: '0 4px 50px 0 rgba(131, 203, 236, 0.10)',
+        marginBottom: 25
     }
 
-
     return (
-        <div style={style}>
-            {{children}}
+        <div className={`box ${bg ? 'without-bg' : ''} ${className ? className : ''}`} {...props}>
+            < div className={'title-box'} style={style}>
+                <h2>{title}</h2>
+                {readMore ? <Link to={readMore.path}>{readMore.text}</Link> : ''}
+            </div>
+            {children}
         </div>
     )
 }

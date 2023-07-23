@@ -1,0 +1,38 @@
+.box {
+  border-radius: 40px;
+  background: #FFF;
+  box-shadow: 0 4px 50px 0 rgba(131, 203, 236, 0.10);
+  padding: 25px;
+
+  &.without-bg {
+    background: none;
+    box-shadow: none;
+  }
+
+  > div.title-box {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      color: var(--title, #080E13);
+      text-align: right;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.02px;
+      margin: 0;
+    }
+
+    a {
+      color: #458BF0;
+      text-align: right;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.018px;
+      text-decoration: none;
+    }
+  }
+}
