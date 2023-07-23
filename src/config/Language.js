@@ -34,6 +34,10 @@ export const Language = {
         mg_3000: '3000 مگابایت',
         mg_500: '500 مگابایت',
         used_host_space: 'فضای استفاده شده هاست',
+        our_instagram: 'اینستاگرام ما',
+        our_telegram: 'تلگرام ما',
+        our_whatsapp: 'واتساپ ما',
+        setting: 'تنظیمات',
     },
     en: {}
 }
