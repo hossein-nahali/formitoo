@@ -9,7 +9,7 @@ export const GeneralStatus = () => {
             <Swiper slidesPerView={4} spaceBetween={15} loop={true} breakpoints={{
                 320: {
                     // width: 576,
-                    slidesPerView: 1.5,
+                    slidesPerView: 2.5,
                 },
                 768: {
                     slidesPerView: 2
