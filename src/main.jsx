@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/css/style.scss"
 import {Dashboard} from "./pages/Dashboard";
 import {Home} from "./pages/Home";
+import {GeneralContextProvider} from "./providerContext/GeneralContextProvider.jsx";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
+        <GeneralContextProvider>
+            <RouterProvider router={router}/>
+        </GeneralContextProvider>
     </React.StrictMode>,
 )
