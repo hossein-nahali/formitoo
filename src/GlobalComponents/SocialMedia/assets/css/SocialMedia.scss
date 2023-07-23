@@ -1,0 +1,51 @@
+.social-media {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    align-items: center;
+    height: 85px;
+
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+
+    p {
+      color: #FFF;
+      text-align: right;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.018px;
+      margin: 0 11px 0 0;
+    }
+
+    svg {
+      width: 35px;
+    }
+  }
+
+  .instagram {
+    border-radius: 20px;
+    background: linear-gradient(135deg, #F47778 0%, #E96791 100%);
+    box-shadow: 0 4px 10px 0 rgba(244, 119, 120, 0.25);
+
+
+  }
+
+  .whatsapp {
+    border-radius: 20px;
+    background: linear-gradient(135deg, #00E676 0%, #1EBEA5 100%);
+    box-shadow: 0 4px 10px 0 rgba(3, 193, 255, 0.25);
+  }
+
+  .telegram {
+    background: linear-gradient(135deg, #03C1FF 0%, #0391FF 100%);
+    box-shadow: 0 4px 10px 0 rgba(3, 193, 255, 0.25);
+  }
+}
