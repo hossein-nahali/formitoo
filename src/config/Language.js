@@ -38,6 +38,15 @@ export const Language = {
         our_telegram: 'تلگرام ما',
         our_whatsapp: 'واتساپ ما',
         setting: 'تنظیمات',
+        editing_information: 'ویرایش اطلاعات',
+        display_name: 'نام نمایشی',
+        desc_upload: 'برای آپلود تصویر در این کادر کلیک کرده یا آن رو کشیده و اینجا رها کنید',
+        edit_profile_picture: 'ویرایش عکس پروفایل',
+        drop_file_here: 'فایل را اینجا رها کنید',
+        size_file: 'حجم فایل',
+        name_file: 'نام فایل',
+        save: 'ذخیره',
+        select_image_only: 'لطفا فقط فایل تصویر انتخاب کنید',
     },
     en: {}
 }
