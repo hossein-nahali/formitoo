@@ -15,13 +15,13 @@ export const Menu = () => {
         {
             tooltip: Language.fa.list_test,
             icon: <ClipboardText/>,
-            path: "/list_test",
+            path: "test/list",
             active: false
         },
         {
             tooltip: Language.fa.create_test,
             icon: <ClipboardExport/>,
-            path: "/create_test",
+            path: "test/create",
             active: false
         },
         {
