@@ -15,7 +15,7 @@ export const Home = () => {
 
     return (
         <div>
-            <Title title={`asfasf`} presonal={27}  test={personality_test} is_show_desc={true}/>
+            <Title title={`${good_morning} ${name}`} presonal={27}  test={personality_test} is_show_desc={true}/>
             <GeneralStatus/>
             <Row className={'mb-4 mb-lg-0'}>
                 <Col lg={9} className={'mb-5 mb-lg-4'}>
