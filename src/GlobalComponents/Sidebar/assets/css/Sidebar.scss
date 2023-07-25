@@ -28,10 +28,73 @@
       line-height: normal;
       letter-spacing: 0.02px;
       margin: 0;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      &.setting-active {
+
+        > span.editing-information {
+          transform: translate3d(0, 0, 10px);
+          opacity: 1;
+        }
+      }
+
+      &.setting-not-active {
+
+        .setting-title-sidebar {
+          transform: translate3d(0, 0, 10px);
+          opacity: 1;
+        }
+      }
+
+
+      span {
+        position: absolute;
+        white-space: nowrap;
+        transform: translate3d(25px, 0, 10px);
+        transition: all .3s ease;
+        opacity: 0;
+      }
     }
 
-    i {
-      cursor: pointer;
+    .close {
+      width: 22px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      &.setting-active {
+        .editing-information {
+          transform: scale3d(1, 1, 1.5);
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+
+      &.setting-not-active {
+
+        .setting-title-sidebar {
+          transform: scale3d(1, 1, 1.5);
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+
+
+      i, svg {
+        position: absolute;
+        white-space: nowrap;
+        transform: scale3d(0, 0, 1.5);
+        transition: all .3s ease;
+        opacity: 0;
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+        pointer-events: none;
+      }
     }
   }
 
@@ -115,6 +178,7 @@
       display: flex;
       align-items: flex-start;
       justify-content: flex-end;
+      cursor: pointer;
 
       svg {
         margin-top: 5px;

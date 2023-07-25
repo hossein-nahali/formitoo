@@ -6,7 +6,7 @@ import {Table} from "../../GlobalComponents/Table";
 import {Test} from "../../config/fakeData/Test.js";
 import {User} from "../../config/fakeData/User.js";
 import {TitleExam} from "../../config/fakeData/TitleExam.js";
-import {SocialMedia} from "../../GlobalComponents/SocialMedia/index.jsx";
+import {SocialMedia} from "../../GlobalComponents/SocialMedia";
 
 export const Home = () => {
 

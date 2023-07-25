@@ -1,9 +1,8 @@
 import profile from "../assets/img/profile.png";
-import {Admin, Edit} from "../../../assets/icons/index.js";
 import {Admin, Edit} from "../../../assets/icons";
 import {Language} from "../../../config/Language.js";
 
-export const Profile = () => {
+export const Profile = ({setStateSetting}) => {
     const {name, roleAdmin} = Language.fa
     return (
         <div className="profile-parent">
@@ -19,7 +18,7 @@ export const Profile = () => {
                     </div>
                 </div>
             </div>
-            <div className="edit">
+            <div className="edit" onClick={() => setStateSetting(true)}>
                 <Edit/>
             </div>
         </div>
