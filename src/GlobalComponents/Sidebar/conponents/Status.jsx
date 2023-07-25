@@ -1,5 +1,5 @@
 import {Language} from "../../../config/Language.js";
-import {Setting} from "../../../assets/icons/index.js";
+import {Setting} from "../../../assets/icons";
 import {StatusNews} from "../../../config/fakeData/StatusNews.js";
 
 export const Status = () => {

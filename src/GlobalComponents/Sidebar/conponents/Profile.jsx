@@ -1,5 +1,6 @@
 import profile from "../assets/img/profile.png";
 import {Admin, Edit} from "../../../assets/icons/index.js";
+import {Admin, Edit} from "../../../assets/icons";
 import {Language} from "../../../config/Language.js";
 
 export const Profile = () => {

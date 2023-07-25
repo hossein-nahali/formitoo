@@ -1,4 +1,4 @@
-import {User} from "../../../assets/icons/index.js";
+import {User} from "../../../assets/icons";
 import {Language} from "../../../config/Language.js";
 
 export const TotalParticipant = () => {
