@@ -7,6 +7,7 @@ import "./assets/css/style.scss"
 import {Dashboard} from "./pages/Dashboard";
 import {Home} from "./pages/Home";
 import {GeneralContextProvider} from "./providerContext/GeneralContextProvider.jsx";
+import {TestList} from "./pages/TestList";
 
 
 const router = createBrowserRouter([
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/list_test",
-                element: <div>list test</div>,
+                element: <TestList/>,
             },
             {
                 path: "/create_test",
