@@ -1,5 +1,5 @@
 import './assets/css/home.scss'
-import {GeneralStatus, Title} from "./Components";
+import {GeneralStatus} from "./Components";
 import {Col, Row} from "react-bootstrap";
 import {Box} from "../../GlobalComponents/Box";
 import {Table} from "../../GlobalComponents/Table";
@@ -7,12 +7,15 @@ import {Test} from "../../config/fakeData/Test.js";
 import {User} from "../../config/fakeData/User.js";
 import {TitleExam} from "../../config/fakeData/TitleExam.js";
 import {SocialMedia} from "../../GlobalComponents/SocialMedia";
+import {Title} from "../../GlobalComponents/Title";
+import {Language} from "../../config/Language.js";
 
 export const Home = () => {
+    const {good_morning, name, personality_test} = Language.fa
 
     return (
         <div>
-            <Title/>
+            <Title title={`asfasf`} presonal={27}  test={personality_test} is_show_desc={true}/>
             <GeneralStatus/>
             <Row className={'mb-4 mb-lg-0'}>
                 <Col lg={9} className={'mb-5 mb-lg-4'}>
