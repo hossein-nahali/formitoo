@@ -2,6 +2,16 @@
   margin: 0;
   overflow: auto;
 
+  &.with-checkbox {
+    .table-item {
+
+      &:not(:first-child) {
+        margin: 3px 0;
+        padding: 0 0;
+      }
+    }
+  }
+
   > div {
     @media only screen and (max-width: 1024px) {
       min-width: 555px;

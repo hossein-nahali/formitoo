@@ -3,7 +3,7 @@ import {Language} from "../../config/Language.js";
 import './assets/css/TestList.scss'
 import {ConfirmBtn} from "../../GlobalComponents/ConfirmBtn/index.jsx";
 import {Danger, Trash} from "../../assets/icons";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Table} from "../../GlobalComponents/Table/index.jsx";
 import {useTestListPage} from "../../config/fakeData/TestListPage.js";
 
@@ -11,6 +11,7 @@ export const TestList = () => {
     const {list_test, personality_test, delete_selected_items, confirm_delete} = Language.fa
     const [btnConfirm, setBtnConfirm] = useState(false)
     const [testListPage, setTestListPage] = useTestListPage()
+    const [isChecked, setIsChecked] = useState(false)
     const props_confirm_component = {
         text: delete_selected_items,
         secondary_text: confirm_delete,
@@ -20,14 +21,45 @@ export const TestList = () => {
         loading: btnConfirm.loading,
     }
 
+    useEffect(() => {
+        const checkBox = !!testListPage.body.find(itemListPage => itemListPage.checked === true)
+        setIsChecked(checkBox);
+    }, [testListPage])
+
+    const checkBoxHandler = (item) => {
+        const body = testListPage.body.map(itemListPage => {
+            if (itemListPage.id === item.id) {
+                return {
+                    ...itemListPage,
+                    checked: !item.checked
+                };
+            }
+
+            return {...itemListPage}
+        })
+        setTestListPage(({...testListPage, body}))
+    }
+
+    const checkAllBoxHandler = (checkedAll, setCheckedAll) => {
+        const body = testListPage.body.map(itemListPage => {
+            return {
+                ...itemListPage,
+                checked: !checkedAll
+            };
+        })
+        setCheckedAll(!checkedAll)
+        setTestListPage(({...testListPage, body}))
+    }
+
     return (
         <div className={'test-list-page'}>
             <Title title={list_test} presonal={27} test={personality_test} is_show_desc={true}/>
-            <div className="events">
+            {isChecked && <div className="events">
                 <ConfirmBtn {...props_confirm_component}/>
-            </div>
+            </div>}
             <Table headerTable={testListPage.header} contentTable={testListPage.body}
-                   tableCustomize={testListPage.customize}/>
+                   tableCustomize={testListPage.customize} checkBoxHandler={checkBoxHandler}
+                   checkAllBoxHandler={checkAllBoxHandler}/>
         </div>
     )
 }
