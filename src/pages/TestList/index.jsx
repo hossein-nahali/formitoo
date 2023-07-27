@@ -5,7 +5,7 @@ import {ConfirmBtn} from "../../GlobalComponents/ConfirmBtn/index.jsx";
 import {Danger, Trash} from "../../assets/icons";
 import {useEffect, useState} from "react";
 import {Table} from "../../GlobalComponents/Table/index.jsx";
-import {useTestListPage} from "../../config/fakeData/TestListPage.js";
+import {useTestListPage} from "../../config/fakeData/TestListPage.jsx";
 
 export const TestList = () => {
     const {list_test, personality_test, delete_selected_items, confirm_delete} = Language.fa
