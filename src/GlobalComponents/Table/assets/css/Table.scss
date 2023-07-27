@@ -5,6 +5,11 @@
   &.with-checkbox {
     .table-item {
 
+      &:first-child {
+        margin-bottom: 3px;
+        padding-bottom: 0;
+      }
+
       &:not(:first-child) {
         margin: 3px 0;
         padding: 0 0;
