@@ -36,28 +36,30 @@ export const Table = ({headerTable = [], contentTable = []}) => {
     }
     return (
         <div className="table">
-            <div className={'table-header'}>
-                {headerTable.map(headerItem => {
-                    return <div key={headerItem.id}
-                                style={styleTableHeader(headerItem)}>
-                        {headerItem.name}
-                    </div>
-                })}
-            </div>
-            <div className={'table-body'}>
-                {contentTable.map((item) => {
-                    return (
-                        <div key={item.id} className={'table-item'}>
-                            {item.content.map((itemTable, index) => {
-                                return (
-                                    <div key={index} style={styleTableBody(itemTable)}>
-                                        {itemTable.name}
-                                    </div>
-                                )
-                            })}
+            <div>
+                <div className={'table-header'}>
+                    {headerTable.map(headerItem => {
+                        return <div key={headerItem.id}
+                                    style={styleTableHeader(headerItem)}>
+                            {headerItem.name}
                         </div>
-                    )
-                })}
+                    })}
+                </div>
+                <div className={'table-body'}>
+                    {contentTable.map((item) => {
+                        return (
+                            <div key={item.id} className={'table-item'}>
+                                {item.content.map((itemTable, index) => {
+                                    return (
+                                        <div key={index} style={styleTableBody(itemTable)}>
+                                            {itemTable.name}
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )
