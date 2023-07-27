@@ -1,17 +1,11 @@
 export const Eye = (props) => (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="vuesax/linear/eye">
-            <g id="vuesax/linear/eye_2">
-                <g id="eye">
-                    <path id="Vector"
-                          d="M18.1766 13.9999C18.1766 16.3099 16.3099 18.1766 13.9999 18.1766C11.6899 18.1766 9.82324 16.3099 9.82324 13.9999C9.82324 11.6899 11.6899 9.82324 13.9999 9.82324C16.3099 9.82324 18.1766 11.6899 18.1766 13.9999Z"
-                          stroke={props.color ? props.color : "#292D32"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path id="Vector_2"
-                          d="M13.9998 23.6482C18.1182 23.6482 21.9565 21.2215 24.6282 17.0215C25.6782 15.3765 25.6782 12.6115 24.6282 10.9665C21.9565 6.76651 18.1182 4.33984 13.9998 4.33984C9.88148 4.33984 6.04315 6.76651 3.37148 10.9665C2.32148 12.6115 2.32148 15.3765 3.37148 17.0215C6.04315 21.2215 9.88148 23.6482 13.9998 23.6482Z"
-                          stroke={props.color ? props.color : "#292D32"} strokeWidth="1.5" strokeLinecap="round"
-                          strokeLinejoin="round"/>
-                </g>
-            </g>
-        </g>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+            d="M15.58 12C15.58 13.98 13.98 15.58 12 15.58C10.02 15.58 8.42004 13.98 8.42004 12C8.42004 10.02 10.02 8.42004 12 8.42004C13.98 8.42004 15.58 10.02 15.58 12Z"
+            stroke={props.color ? props.color : "#292D32"} strokeWidth="1.5" strokeLinecap="round"
+            strokeLinejoin="round"/>
+        <path
+            d="M12 20.27C15.53 20.27 18.82 18.19 21.11 14.59C22.01 13.18 22.01 10.81 21.11 9.39997C18.82 5.79997 15.53 3.71997 12 3.71997C8.46997 3.71997 5.17997 5.79997 2.88997 9.39997C1.98997 10.81 1.98997 13.18 2.88997 14.59C5.17997 18.19 8.46997 20.27 12 20.27Z"
+            stroke={props.color ? props.color : "#292D32"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 )
