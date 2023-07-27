@@ -1,5 +1,12 @@
 .table {
   margin: 0;
+  overflow: auto;
+
+  > div {
+    @media only screen and (max-width: 1024px) {
+      min-width: 555px;
+    }
+  }
 
   .table-header {
     display: flex;
@@ -14,6 +21,7 @@
       font-weight: 300;
       line-height: normal;
       letter-spacing: 0.014px;
+      background: none;
     }
   }
 
