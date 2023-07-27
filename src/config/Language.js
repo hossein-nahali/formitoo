@@ -47,6 +47,10 @@ export const Language = {
         name_file: 'نام فایل',
         save: 'ذخیره',
         select_image_only: 'لطفا فقط فایل تصویر انتخاب کنید',
+        delete_selected_items: 'حذف موارد انتخاب شده',
+        confirm_delete: 'آیا از حذف اطمینان دارید ؟',
+        yes: 'بله',
+        no: 'خیر',
     },
     en: {}
 }
