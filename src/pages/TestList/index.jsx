@@ -2,7 +2,7 @@ import {Title} from "../../GlobalComponents/Title";
 import {Language} from "../../config/Language.js";
 import './assets/css/TestList.scss'
 import {ConfirmBtn} from "../../GlobalComponents/ConfirmBtn/index.jsx";
-import {Danger, TickSquare, Trash} from "../../assets/icons";
+import {Danger, Trash} from "../../assets/icons";
 import {useState} from "react";
 import {Table} from "../../GlobalComponents/Table/index.jsx";
 import {useTestListPage} from "../../config/fakeData/TestListPage.js";
