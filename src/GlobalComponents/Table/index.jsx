@@ -1,4 +1,5 @@
 import './assets/css/Table.scss'
+import {TickSquare} from "../../assets/icons";
 
 export const Table = ({headerTable = [], contentTable = [], tableCustomize}) => {
 
@@ -38,7 +39,7 @@ export const Table = ({headerTable = [], contentTable = [], tableCustomize}) => 
         <div className="table">
             <div>
                 <div className={'table-header'}>
-                    {tableCustomize.check_box && <div></div>}
+                    {tableCustomize.check_box && <div className={'checkbox'}><TickSquare/></div>}
                     {headerTable.map(headerItem => {
                         return <div key={headerItem.id}
                                     style={styleTableHeader(headerItem)}>
@@ -50,7 +51,7 @@ export const Table = ({headerTable = [], contentTable = [], tableCustomize}) => 
                     {contentTable.map((item) => {
                         return (
                             <div key={item.id} className={'table-item'}>
-                                {tableCustomize.check_box && <div>   </div>}
+                                {tableCustomize.check_box && <div className={'checkbox'}><TickSquare/></div>}
 
                                 {item.content.map((itemTable, index) => {
                                     return (
