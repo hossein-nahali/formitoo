@@ -1,7 +1,7 @@
 import './assets/css/Table.scss'
 import {TickSquare} from "../../assets/icons";
 
-export const Table = ({headerTable = [], contentTable = [], tableCustomize}) => {
+export const Table = ({headerTable = [], contentTable = [], tableCustomize = false}) => {
 
     const position = (value) => {
         if (!value) return null
