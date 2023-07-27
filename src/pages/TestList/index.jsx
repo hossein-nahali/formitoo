@@ -6,6 +6,7 @@ import {Danger, Trash} from "../../assets/icons";
 import {useEffect, useState} from "react";
 import {Table} from "../../GlobalComponents/Table/index.jsx";
 import {useTestListPage} from "../../config/fakeData/TestListPage.jsx";
+import {Pagination} from "../../GlobalComponents/Pagination/index.jsx";
 
 export const TestList = () => {
     const {list_test, personality_test, delete_selected_items, confirm_delete} = Language.fa
@@ -60,6 +61,7 @@ export const TestList = () => {
             <Table headerTable={testListPage.header} contentTable={testListPage.body}
                    tableCustomize={testListPage.customize} checkBoxHandler={checkBoxHandler}
                    checkAllBoxHandler={checkAllBoxHandler}/>
+            <Pagination/>
         </div>
     )
 }
