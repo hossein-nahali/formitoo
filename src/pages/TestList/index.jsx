@@ -2,14 +2,15 @@ import {Title} from "../../GlobalComponents/Title";
 import {Language} from "../../config/Language.js";
 import './assets/css/TestList.scss'
 import {ConfirmBtn} from "../../GlobalComponents/ConfirmBtn/index.jsx";
-import {Danger, Trash} from "../../assets/icons";
+import {Danger, TickSquare, Trash} from "../../assets/icons";
 import {useState} from "react";
 import {Table} from "../../GlobalComponents/Table/index.jsx";
-import {TestListPage} from "../../config/fakeData/TestListPage.js";
+import {useTestListPage} from "../../config/fakeData/TestListPage.js";
 
 export const TestList = () => {
     const {list_test, personality_test, delete_selected_items, confirm_delete} = Language.fa
     const [btnConfirm, setBtnConfirm] = useState(false)
+    const [testListPage, setTestListPage] = useTestListPage()
     const props_confirm_component = {
         text: delete_selected_items,
         secondary_text: confirm_delete,
@@ -25,7 +26,8 @@ export const TestList = () => {
             <div className="events">
                 <ConfirmBtn {...props_confirm_component}/>
             </div>
-            <Table headerTable={TestListPage.header} contentTable={TestListPage.body}/>
+            <Table headerTable={testListPage.header} contentTable={testListPage.body}
+                   tableCustomize={testListPage.customize}/>
         </div>
     )
 }
