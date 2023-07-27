@@ -25,7 +25,7 @@ export const Home = () => {
                 </Col>
                 <Col lg={3} className={'mb-5 mb-lg-4'}>
                     <Box title={'لیست آزمون ها'}>
-                        <Table headerTable={User.header} contentTable={User.body}/>
+                        <Table headerTable={User.header} contentTable={User.body} customize={User.customize}/>
                     </Box>
                 </Col>
             </Row>
