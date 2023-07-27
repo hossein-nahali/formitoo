@@ -20,6 +20,7 @@ export const useTestListPage = () => {
                     {name: '27', position: 'centered'},
 
                 ],
+                checked: false,
                 id: 1234,
             },
             {
@@ -29,6 +30,7 @@ export const useTestListPage = () => {
                     {name: '100', position: 'centered'},
                     {name: '100', position: 'centered'},
                 ],
+                checked: false,
                 id: 45245,
             },
             {
@@ -38,6 +40,7 @@ export const useTestListPage = () => {
                     {name: '20', position: 'centered'},
                     {name: '20', position: 'centered'},
                 ],
+                checked: false,
                 id: 54654,
             },
             {
@@ -47,6 +50,7 @@ export const useTestListPage = () => {
                     {name: '200', position: 'centered'},
                     {name: '200', position: 'centered'},
                 ],
+                checked: false,
                 id: 574574,
             },
             {
@@ -56,6 +60,7 @@ export const useTestListPage = () => {
                     {name: '150', position: 'centered'},
                     {name: '150', position: 'centered'},
                 ],
+                checked: false,
                 id: 25454,
             },
         ]
