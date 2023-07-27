@@ -8,6 +8,7 @@ import {Dashboard} from "./pages/Dashboard";
 import {Home} from "./pages/Home";
 import {GeneralContextProvider} from "./providerContext/GeneralContextProvider.jsx";
 import {TestList} from "./pages/TestList";
+import {UsersList} from "./pages/UsersList";
 
 
 const router = createBrowserRouter([
@@ -25,11 +26,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "test/create",
-                element: <div>list test</div>,
+                element: <div> create teste</div>,
             },
             {
                 path: "/list_users",
-                element: <div>users list</div>,
+                element: <UsersList/>,
             },
         ]
     },
