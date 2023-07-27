@@ -1,6 +1,6 @@
 import './assets/css/Table.scss'
 
-export const Table = ({headerTable = [], contentTable = []}) => {
+export const Table = ({headerTable = [], contentTable = [], tableCustomize}) => {
 
     const position = (value) => {
         if (!value) return null
@@ -38,6 +38,7 @@ export const Table = ({headerTable = [], contentTable = []}) => {
         <div className="table">
             <div>
                 <div className={'table-header'}>
+                    {tableCustomize.check_box && <div></div>}
                     {headerTable.map(headerItem => {
                         return <div key={headerItem.id}
                                     style={styleTableHeader(headerItem)}>
@@ -49,6 +50,8 @@ export const Table = ({headerTable = [], contentTable = []}) => {
                     {contentTable.map((item) => {
                         return (
                             <div key={item.id} className={'table-item'}>
+                                {tableCustomize.check_box && <div>   </div>}
+
                                 {item.content.map((itemTable, index) => {
                                     return (
                                         <div key={index} style={styleTableBody(itemTable)}>
