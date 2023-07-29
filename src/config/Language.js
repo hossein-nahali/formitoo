@@ -25,7 +25,7 @@ export const Language = {
             in_test: 'در آزمون',
             participated: 'شرکت کردند'
         },
-        personality_test: 'آزمون تیپ شخصیتی',
+        personality_test: 'تیپ شخصیتی',
         participants: 'شرکت کنندگان',
         person_27: '27 نفر',
         tests: 'آزمون ها',
@@ -51,6 +51,7 @@ export const Language = {
         confirm_delete: 'آیا از حذف اطمینان دارید ؟',
         yes: 'بله',
         no: 'خیر',
+        desc_create_test: 'توجه داشته باشید پس از ایجاد لینک آزمون در اختیار شما قرار خواهد گرفت.'
     },
     en: {}
 }
