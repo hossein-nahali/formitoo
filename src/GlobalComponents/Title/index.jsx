@@ -4,7 +4,7 @@ import {Language} from "../../config/Language.js";
 import {Setting2} from "../../assets/icons/index.js";
 import './assets/css/Title.scss'
 
-export const Title = ({title, is_show_desc, presonal, test}) => {
+export const Title = ({title, is_show_desc, presonal, desc}) => {
     const {status_desc_title, personality_test} = Language.fa
     const {dispatch} = useContext(GeneralContext)
 
@@ -14,9 +14,10 @@ export const Title = ({title, is_show_desc, presonal, test}) => {
                 <h1>{title}</h1>
                 {
                     is_show_desc ?
+                        desc? desc :
                         <p>{status_desc_title.today}
                             <span>{presonal ? presonal : 27}</span> {status_desc_title.person} {status_desc_title.in_test}
-                            <span>{test ? test : personality_test}</span> {status_desc_title.participated}</p>
+                            <span>{`${personality_test} ${status_desc_title.participated}`}</span></p>
                         : ''}
             </div>
             <div onClick={() => dispatch({type: "open_sidebar"})}>
