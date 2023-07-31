@@ -1,3 +1,75 @@
 .create-test-page {
 
+
+  > div.flex {
+    height: calc(100% - 88px);
+    display: flex;
+  }
+
+  .right {
+    width: 100%;
+
+    .input-field {
+      max-width: 300px;
+    }
+  }
+
+  .sidebar {
+    height: 100%;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 4px 50px 0 rgba(131, 203, 236, 0.10);
+    padding: 25px 20px;
+    width: 360px;
+
+    h4 {
+      color: var(--title, #080E13);
+      text-align: right;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.018px;
+      margin: 0;
+    }
+
+    .wrapper {
+      overflow-y: auto;
+      height: 100%;
+      padding: 0 0 25px 0;
+
+      .question {
+        display: flex;
+        border-radius: 15px;
+        background: #EDEFF3;
+        box-shadow: 0 4px 50px 0 rgba(131, 203, 236, 0.10);
+        padding: 17px;
+        margin-top: 18px;
+
+        .activities {
+          display: flex;
+          gap: 5px;
+
+          svg {
+            cursor: pointer;
+            width: 20px;
+          }
+        }
+
+        p {
+          color: var(--title, #080E13);
+          text-align: right;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          letter-spacing: 0.014px;
+          margin: 0 0 0 8px;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
 }

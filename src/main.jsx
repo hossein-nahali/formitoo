@@ -26,10 +26,6 @@ const router = createBrowserRouter([
                 element: <TestList/>,
             },
             {
-                path: "test/create",
-                element: <CreateTest/>,
-            },
-            {
                 path: "/list_users",
                 element: <UsersList/>,
             },

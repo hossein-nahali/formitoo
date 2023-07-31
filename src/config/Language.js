@@ -51,6 +51,7 @@ export const Language = {
         confirm_delete: 'آیا از حذف اطمینان دارید ؟',
         yes: 'بله',
         no: 'خیر',
+        added_questions: 'سوالات اضافه شده',
         desc_create_test: 'توجه داشته باشید پس از ایجاد لینک آزمون در اختیار شما قرار خواهد گرفت.'
     },
     en: {}

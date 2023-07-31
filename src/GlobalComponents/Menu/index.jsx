@@ -19,12 +19,6 @@ export const Menu = () => {
             active: false
         },
         {
-            tooltip: Language.fa.create_test,
-            icon: <ClipboardExport/>,
-            path: "test/create",
-            active: false
-        },
-        {
             tooltip: Language.fa.list_users,
             icon: <UserSquare/>,
             path: "/list_users",
